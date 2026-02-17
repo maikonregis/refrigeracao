@@ -1,0 +1,336 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+header {
+  background: #0d3b66;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: #1982c4;
+  color: white;
+}
+
+.hero2 {
+  text-align: center;
+  padding: 40px;
+  background: #1982c4;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background: #22aaff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.servicos-home {
+  padding: 70px;
+  text-align: center;
+}
+
+.card {
+  width: 250px;
+  height: 300px; /* define altura fixa */
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffffa6;
+
+  background-size: cover;      /* NÃO estica */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* texto embaixo estilo loja */
+}
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+}
+
+.card h3,
+.card p,
+.card button {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.cards-container-loja {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 30px auto;
+  
+  background-size: cover;      /* NÃO estica */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat;
+}
+
+footer {
+  background: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  
+}
+
+
+
+
+
+/*css-orçamento*/
+
+.orcamento {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f0f4f8, #e6edf5);
+}
+
+.orcamento h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0d3b66;
+}
+
+.form-orcamento {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+.form-orcamento:hover {
+  transform: translateY(-3px);
+}
+
+/* Labels */
+
+.form-orcamento label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs, Select e Textarea */
+
+.form-orcamento input,
+.form-orcamento select,
+.form-orcamento textarea {
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #f9fafc;
+}
+
+.form-orcamento input:focus,
+.form-orcamento select:focus,
+.form-orcamento textarea:focus {
+  border-color: #1982c4;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(25, 130, 196, 0.2);
+  outline: none;
+}
+
+/* TEXTAREA MAIOR */
+
+.form-orcamento textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* BOTÃO */
+
+.form-orcamento button {
+  margin-top: 10px;
+  padding: 16px;
+  background: linear-gradient(90deg, #1982c4, #156fa7);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-orcamento button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+/*Logo alinhada*/
+
+.topo {
+  background-color: #184a75;
+  padding: 20px 0;
+  color: white;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* LOGO + TÍTULO LADO A LADO */
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.logo-titulo h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* MENU */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*botoes menu*/
+
+nav a {
+  display: inline-block;          /* permite padding */
+  background-color: #ffffff;
+  color: #1f4e79;
+  padding: 8px 18px;
+  margin: 5px 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+  background-color: #00aaff;
+  color: white;
+  transform: translateY(-2px);
+}
+/*-----------------*/
+
+.titulo-centralizado {
+  text-align: center;
+}
+
+
+
+
+
+.servicos-home {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.servicos-home h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #1f4e79;
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  color: White;
+}
+
+
+
+.mapa {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text-decoration: none; /* remove sublinhado */
+  color: rgb(0, 0, 0); /* mantém texto branco */
+  cursor: pointer;
+}

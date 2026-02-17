@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Refrigeração Godinho</title>
+
+<meta name="description" content="Conserto de geladeiras, freezers e máquinas de lavar na Grande Florianópolis SC. Venda de peças e atendimento rápido com garantia.">
+
+<meta name="keywords" content="conserto de geladeira na Grande florianópolis, técnico de máquina de lavar florianópolis, conserto de freezer sc">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topo">
+  <div class="header-container">
+
+    <div class="logo-titulo">
+      <img src="imagens/logo.png" alt="Refrigeração Godinho" class="logo">
+      <h1>Refrigeração Godinho</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="loja.html">Peças</a>
+      <a href="orcamento.html">Orçamento</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+  </div>
+</header>
+
+
+
+
+
+
+<section class="orcamento">
+
+<form action="#" method="post" class="form-orcamento">
+
+<label>Seu Nome</label>
+<input type="text" id="nome" required>
+
+<label>Seu WhatsApp</label>
+<input type="tel" id="whatsapp" required>
+
+<label>Bairro</label>
+<input type="text" id="bairro" required>
+
+<label>Selecione o aparelho</label>
+<select id="aparelho" required>
+  <option value="">Selecione</option>
+  <option>Geladeira</option>
+  <option>Freezer</option>
+  <option>Máquina de Lavar</option>
+</select>
+
+<label>Descreva o problema</label>
+<textarea id="problema"></textarea>
+
+<button type="button" onclick="enviarWhats()">Enviar Orçamento</button>
+</form>
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
